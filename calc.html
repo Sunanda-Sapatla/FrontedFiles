@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>cal</title>
+    </head>
+    <body style="background-image: url(lotus.webp);">
+        enter num1:
+        <input type="text" id="a"><br>
+        enter num2:
+        <input type="text" id="b"><br>
+        <button onclick="add()">add</button>
+        <button onclick="sub()">sub</button>
+        <button onclick="mul()">mul</button>
+        <button onclick="div()">div</button>
+        result:
+        <input type="text" id="res"><br>
+        
+        <script>
+        function add()
+        {
+        var m=Number(document.getElementById("a").value);
+       var n= Number(document.getElementById("b").value);
+       var e=m+n;
+        document.getElementById("res").value=e;
+        }
+        function sub(){
+         var m =document.getElementById("a").value;
+        var n=document.getElementById("b").value;
+       var e=m-n;
+        document.getElementById("res").value=e;
+            
+        }
+        function mul(){
+           var m= document.getElementById("a").value;
+       var n=document.getElementById("b").value;
+       var e=m*n;
+        document.getElementById("res").value=e;
+        }
+        function div(){
+          var m= document.getElementById("a").value;
+      var n= document.getElementById("b").value;
+      var  e=m/n;
+        document.getElementById("res").value=e;
+        }
+        </script>
+        
+        </body>
+        </html>

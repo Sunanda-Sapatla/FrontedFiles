@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dom</title>
+    </head>
+    <body>
+    <button ondbclick=fun()>save</button>
+        
+        <script>
+            function fun(){
+                console.log("clicked")
+            }
+            function foo()
+            {
+                var c=document.getElementById("hello").innerHTML
+                document.getElementById("c").value=c
+            }
+            function k(){
+                var m=document.getElementById("c").value
+                document.getElementById("two").innerHTML=m
+            }
+
+        </script>
+        <h1 onclick=foo() id="hello">this is heading</h1>
+        <input id="c" type="text">
+        <button onclick="k()">click</button>
+        <p id="two"></p>
+        
+
+    </body>
+
+</html>
